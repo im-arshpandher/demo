@@ -15,7 +15,7 @@ jobs:
       - name: Execute deployment on VPS
         uses: appleboy/ssh-action@v1.2.0
         env:
-          APP_DIR: /root/projects/arsh
+          APP_DIR: /root/projects/arsh/demo
           APP_NAME: express-demo
         with:
           host: ${{ secrets.VPS_HOST }}
